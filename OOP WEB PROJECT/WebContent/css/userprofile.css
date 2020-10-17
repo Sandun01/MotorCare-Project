@@ -1,0 +1,58 @@
+@charset "ISO-8859-1";
+
+.inf{
+	
+	padding : 20px 10px;
+	font-family:Arial;
+	font-size: 20px;
+	margin-bottom:50px;
+	margin: 50px 50px;
+	border-style: solid;
+	border-width: 10px 5px;
+	border-radius : 20px;
+	background-color : #ffccc8;
+}
+
+.form1
+{
+	margin-bottom:50px;
+	margin: 50px 50px;
+	border-style: solid;
+	border-width: 10px 5px;
+	border-radius : 20px;
+	background-color : #ffccc8;
+}
+
+.of{
+	overflow :auto;
+}
+
+
+body{
+	background-color : #ffffff;
+}
+
+.subbtn:hover{
+  	cursor: pointer;
+	color : purple;
+}
+
+	
+	
+
+.subbtn{
+	font-family:italics;
+	font-size:20px;
+	text-align: center;
+	padding: 25px,15px;
+	border-width :2px;
+	
+}
+
+input{
+	font-size : 20pt;
+	border-style : solid;
+	border-radius : 10px;
+	border-width : 4px;
+	font-family : italics;
+}

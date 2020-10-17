@@ -1,0 +1,90 @@
+@charset "ISO-8859-1";
+/*User profile begin*/
+
+.userpic
+{
+background-color:white;
+color:#095F6A;
+cursor:pointer;
+border:none;
+}
+
+.userpic:hover
+{
+background:#0ff;
+}
+
+.uname
+{
+float: left;
+}
+
+/*----------------------*/
+
+
+* 
+{
+ box-sizing: border-box;
+}
+
+.row
+{
+display: flex;
+flex-wrap: Wrap;
+margin: 0 -16px;
+}
+
+.col1
+{
+flex: 30%;
+}
+
+.col1
+{
+padding: 0px 30px;
+margin:10px 80px;
+}
+
+label
+{
+margin-bottom: 10px;
+display: block;
+}
+
+.col1
+{
+background-color:#FCE9F9;
+border:1px solid #AA5A9E;
+border-radius: 3px;
+margin-top: 5px;
+}
+
+
+.col2:after
+{
+content: "";
+display: table;
+clear: both;
+}
+
+
+.button1
+{
+background-color:#99448C;
+margin:10px;
+display:block;
+color:white;
+text-align:center;
+font-size:25px;
+padding:5px 10px;
+text-decoration: none;
+}
+
+.button1:hover
+{
+background-color:#0ff;
+}
+
+
+/*end of user profile*/
+

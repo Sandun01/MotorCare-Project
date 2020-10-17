@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+  <display-name>MotorCare</display-name>
+  
+<welcome-file-list>
+<welcome-file>Interface.jsp</welcome-file>
+<welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+    
+<!-- Admin login -->
+<servlet>
+<servlet-name>AdminLogin</servlet-name>
+<servlet-class>com.servlet.AdminLogin</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AdminLogin</servlet-name>
+<url-pattern>/adminLogin</url-pattern>
+</servlet-mapping>
+
+<!-- Admin logout -->
+<servlet>
+<servlet-name>AdminLogout</servlet-name>
+<servlet-class>com.servlet.AdminLogout</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AdminLogout</servlet-name>
+<url-pattern>/AdminLogout</url-pattern>
+</servlet-mapping>
+
+<!-- Admin Addd Item -->
+<servlet>
+<servlet-name>AddItem</servlet-name>
+<servlet-class>com.servlet.AddItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AddItem</servlet-name>
+<url-pattern>/AddItem</url-pattern>
+</servlet-mapping>
+
+<!-- Admin Home page -->
+<servlet>
+<servlet-name>AdminHome</servlet-name>
+<jsp-file>/AdminHome.jsp</jsp-file>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AdminHome</servlet-name>
+<url-pattern>/AdminHome</url-pattern>
+</servlet-mapping>
+
+<!-- Admin get Item to update -->
+<servlet>
+<servlet-name>GetItem</servlet-name>
+<servlet-class>com.servlet.GetUpdateItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>GetItem</servlet-name>
+<url-pattern>/getItem</url-pattern>
+</servlet-mapping>
+
+<!-- Admin update Item -->
+<servlet>
+<servlet-name>UpdateItem</servlet-name>
+<servlet-class>com.servlet.UpdateItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>UpdateItem</servlet-name>
+<url-pattern>/UpdateItem</url-pattern>
+</servlet-mapping>
+
+
+<!-- Admin Delete Item -->
+
+<servlet>
+<servlet-name>DeleteItem</servlet-name>
+<servlet-class>com.servlet.DeleteItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteItem</servlet-name>
+<url-pattern>/DeleteItem</url-pattern>
+</servlet-mapping>
+
+
+<!-- Add Comment -->
+
+<servlet>
+<servlet-name>AddComment</servlet-name>
+<servlet-class>com.servlet.AddComment</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AddComment</servlet-name>
+<url-pattern>/AddComment</url-pattern>
+</servlet-mapping>
+
+<!-- Delete Comment -->
+
+<servlet>
+<servlet-name>DeleteComment</servlet-name>
+<servlet-class>com.servlet.DeleteComment</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteComment</servlet-name>
+<url-pattern>/DeleteComment</url-pattern>
+</servlet-mapping>
+
+<!-- Add item to cart -->
+<servlet>
+<servlet-name>AddToCartItem</servlet-name>
+<servlet-class>com.servlet.AddToCartItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>AddToCartItem</servlet-name>
+<url-pattern>/AddToCart</url-pattern>
+</servlet-mapping>
+
+<!-- Update item in cart -->
+<servlet>
+<servlet-name>UpdateCart</servlet-name>
+<servlet-class>com.servlet.UpdateCart</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>UpdateCart</servlet-name>
+<url-pattern>/updateCart</url-pattern>
+</servlet-mapping>
+
+<!-- delete item in cart -->
+<servlet>
+<servlet-name>DeleteCartItem</servlet-name>
+<servlet-class>com.servlet.DeleteCartItem</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>DeleteCartItem</servlet-name>
+<url-pattern>/removeFromCart</url-pattern>
+</servlet-mapping>
+
+<!-- User add appointment Begins -->
+ <servlet>
+    <servlet-name>AddAppointment</servlet-name>
+    <servlet-class>com.servlet.AddAppointment</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddAppointment</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>DeleteAppointment</servlet-name>
+    <servlet-class>com.servlet.DeleteAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DeleteAppointment</servlet-name>
+    <url-pattern>/dlt</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>UpdateAppointment</servlet-name>
+    <servlet-class>com.servlet.UpdateAppointment</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UpdateAppointment</servlet-name>
+    <url-pattern>/upd</url-pattern>
+  </servlet-mapping>
+
+   <servlet>
+    <servlet-name>updateDetails</servlet-name>
+	<jsp-file>/Appointment.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>updateDetails</servlet-name>
+    <url-pattern>/upDetails</url-pattern>
+  </servlet-mapping>
+
+<!-- User add appointment Ends -->
+
+<!-- Admin service -->
+<servlet>
+	<servlet-name> ServiceInsert</servlet-name>
+	<servlet-class>com.servlet.ServiceInsert</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name> ServiceInsert</servlet-name>
+	<url-pattern>/sInsert</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name> DisplayService</servlet-name>
+	<servlet-class>com.servlet.ServiceDisplay</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>DisplayService</servlet-name>
+	<url-pattern>/DisplayService</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name> UpdateService</servlet-name>
+	<servlet-class>com.servlet.UpdateServiceServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>UpdateService</servlet-name>
+	<url-pattern>/sUpdate</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name> DeleteService</servlet-name>
+	<servlet-class>com.servlet.DeleteService</servlet-class>
+</servlet>
+
+<servlet-mapping>
+	<servlet-name>DeleteService</servlet-name>
+	<url-pattern>/sDelete</url-pattern>
+</servlet-mapping>
+
+<!-- Admin service Ends-->
+
+<!--Session Timeout -->
+<session-config>
+<session-timeout>15</session-timeout>
+</session-config>
+
+</web-app>
